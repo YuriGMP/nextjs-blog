@@ -17,9 +17,9 @@ export default function Home() {
           </Link>
         </h1>
 
-        <p className="description">
+        {/* <p className="description">
           Get started by editing <code>pages/index.js</code>
-        </p>
+        </p> */}
 
         <div className="grid">
           <a href="posts/" className="card">
