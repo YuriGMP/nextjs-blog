@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,7 +11,10 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read{' '}
+          <Link href="/posts/first-post" >
+            <a>this page!</a>
+          </Link>
         </h1>
 
         <p className="description">
@@ -18,12 +22,12 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="posts/" className="card">
+            <h3>Blog &rarr;</h3>
+            <p>Aqui esta meu blog</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
+          {/* <a href="https://nextjs.org/learn" className="card">
             <h3>Learn &rarr;</h3>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
@@ -44,7 +48,7 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </a> */}
         </div>
       </main>
 
